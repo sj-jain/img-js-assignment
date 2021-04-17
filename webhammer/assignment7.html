@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>a7</title>
+</head>
+<body>
+    <script>
+        var name = prompt("Enter your name");
+        var word1=prompt("Enter word 1" );
+        var word2=prompt("Enter word 2" );
+        var word3=prompt("Enter word 3" );
+        var word4=prompt("Enter word 4" );
+        var word5=prompt("Enter word 5" );
+        var color=prompt("Enter color ");
+         document.write("you <span id='1'>"+word1+" "+word2+" and "+word3+"</span><br>I do not like them, <span id='2'>"+name+"</span>-I-am.<br>Could you, would you, with a <span id='3'>"+word4+"</span>?<br>I would not, <span id='4'>"+word5+"</span> not, with a goat!")
+        for(let i=1;i<5;i++)
+        {
+            var colour=document.getElementById(i)
+        colour.style.backgroundColor = color; 
+        }
+       
+    </script>
+
+</body>
+</html>

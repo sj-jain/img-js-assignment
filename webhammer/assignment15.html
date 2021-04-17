@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>a15</title>
+</head>
+<body>
+    <div id="content">
+        <img src="https://cdn0.iconfinder.com/data/icons/cosmo-player/40/button_backward_1-512.png" onclick="changes(0)" class="btn" id="back" width="40px">
+        <img src="photo\0_lnVPgiG-45T4tsBW.jpeg" id="img">
+        <img src="https://cdn0.iconfinder.com/data/icons/cosmo-player/40/button_foward_1-512.png" onclick="changes(1)" class="btn" id="next" width="40px">
+    </div>
+    <script>
+        var i=0;
+        function changes(check)
+        {
+            var a=document.getElementById('back')
+            var b=document.getElementById('next')
+            if(check==0)
+            {
+               if(i>=0)
+                --i
+            }
+            else{
+                if(i<4)
+                ++i
+            }
+            if(i>=4)
+            b.src="img/empty.PNG"
+            else
+            b.src="https://cdn0.iconfinder.com/data/icons/cosmo-player/40/button_foward_1-512.png"
+            if(i<0)
+            a.src="img/empty.PNG"
+            else
+            a.src="https://cdn0.iconfinder.com/data/icons/cosmo-player/40/button_backward_1-512.png"
+            change()
+        }
+        function backw(b)
+        {
+            if(i==0)
+            b.src="photo/imglogo.png"
+            else{
+                --i;
+                change()
+            }
+        }
+            function change()
+            {
+                var obj=document.getElementById('img')
+            switch(i)
+            {
+                case -1:
+                    obj.src="photo/1_2soSYXqsaPzpTZ97FGOsEQ.png"
+                    break;
+                case 1:
+                    obj.src="photo/1_A96kbftJ5TzSwqDaJYatGw.png"
+                    break;
+                case 2:
+                    obj.src="photo/1_cM7yY5kyzvtPmAuNn9HUAg.jpeg"
+                    break;
+                case 3:
+                    obj.src="photo/1_nhjs_X32FXtBHjBjDFr3cw.png"
+                    break;
+                case 4:
+                    obj.src="photo/3377341091551941703-128.png"
+                    break;
+            }
+        }
+    </script>
+    
+    
+</body>
+</html>

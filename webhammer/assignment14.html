@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+
+        
+        
+        var a = new Image()
+        a.src = "photo/1_2soSYXqsaPzpTZ97FGOsEQ.png"
+        
+        var b = new Image()
+        b.src = "photo/1_A96kbftJ5TzSwqDaJYatGw.png"
+        
+        var c = new Image()
+        c.src = "photo/1_cM7yY5kyzvtPmAuNn9HUAg.jpeg"
+        
+        var d = new Image()
+        d.src = "photo/0_lnVPgiG-45T4tsBW.jpeg"
+        
+      
+        
+        var counter = 0
+        
+        function changeIt() {
+        
+            ++counter
+        
+            if (counter == 1) {
+                document.searchImage.src = "photo/1_2soSYXqsaPzpTZ97FGOsEQ.png"
+            }
+            else if (counter == 2) {
+                document.searchImage.src = "photo/1_A96kbftJ5TzSwqDaJYatGw.png"
+            }
+            else if (counter == 3) {
+                document.searchImage.src = "photo/1_cM7yY5kyzvtPmAuNn9HUAg.jpeg"
+            }
+            
+            else {
+                document.searchImage.src = "photo/0_lnVPgiG-45T4tsBW.jpeg"
+                counter = 0
+            }
+        
+        }
+        
+        </script>
+</head>
+<body>
+    <img src="photo/0_lnVPgiG-45T4tsBW.jpeg" name="searchImage" onClick="changeIt()"><p>
+
+       
+        
+        
+    
+</body>
+</html>

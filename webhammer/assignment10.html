@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <style>
+        img{
+            height:100px;
+            width:100px;
+        }
+    </style>
+</head>
+<body>
+        <img src="photo\0_lnVPgiG-45T4tsBW.jpeg" id="photo1" onmouseover="change(this,'photo/imglogo.png')" onmouseout="change(this,'photo/0_lnVPgiG-45T4tsBW.jpeg')">
+        <img src="photo\1_2soSYXqsaPzpTZ97FGOsEQ.png" id="photo2" onmouseover="change(this,'photo/imglogo.png')" onmouseout="change(this,'photo/1_2soSYXqsaPzpTZ97FGOsEQ.png')">
+        <img src="photo\1_cM7yY5kyzvtPmAuNn9HUAg.jpeg" id="photo3" onmouseover="change(this,'photo/imglogo.png')" onmouseout="change(this,'photo/1_cM7yY5kyzvtPmAuNn9HUAg.jpeg')">
+        <img src="photo\3377341091551941703-128.png" onmouseover="change2()" onmouseout="change3()">
+    <script>
+        function change(obj,location)
+        {
+            obj.src= location
+        }
+            var a=[]
+            a[0]=document.getElementById('photo1')
+            a[1]=document.getElementById('photo2')
+            a[2]=document.getElementById('photo3')
+        function change2()
+        {
+           for(let i=0;i<3;i++)
+           a[i].src="photo/1_pP6T-eS8bX0ZtXpRTc2vdg.jpeg"
+        }
+        function change3()
+        {
+            a[0].src="photo/0_lnVPgiG-45T4tsBW.jpeg"
+            a[1].src="photo/1_2soSYXqsaPzpTZ97FGOsEQ.png"
+            a[2].src="photo/1_cM7yY5kyzvtPmAuNn9HUAg.jpeg"
+        }
+    </script>
+</body>
+</html>

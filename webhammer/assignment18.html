@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>a18</title>
+</head>
+<body>
+    <body onunload="wclose()">
+        <div class="main">
+        <img src="photo\1_A96kbftJ5TzSwqDaJYatGw.png" onclick="wopen()">
+        <input type="submit" value="CLOSE" onclick="wclose()">
+        </div>
+        <script>
+            var Window=[]
+            function wopen()
+            {
+                Window[0]=window.open('https://www.google.com', "1","height=200,width=200,left=50,top=50")
+                Window[1]=window.open('https://www.yahoo.com', "2","height=200,width=200,left=1100,top=50")
+                Window[2]=window.open('https://www.twitter.com', "3","height=200,width=200,left=50,top=1000")
+                Window[3]=window.open('https://www.facebook.com', "4","height=200,width=200,left=1100,top=1000")
+                Window[4]=window.open('https://www.youtube.com', "5","height=200,width=200,left=550,top=250")
+            }
+            function wclose()
+            {
+                Window.close()
+            }
+        </script>
+</body>
+</html>
