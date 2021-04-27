@@ -69,7 +69,7 @@ element1.addEventListener('blur', ()=>{
         if(this.readyState == 4){
             if (this.status == 200) {
                 let response = JSON.parse(this.response);
-                alert("Form submitted with Json ");
+                alert("Form submitted with Json" + response["token"]);
             }
             else if(this.status != 200){
                 alert("Error "+this.status+" occured!")}
