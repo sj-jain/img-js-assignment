@@ -13,7 +13,7 @@ element1.addEventListener('onclick', ()=>{
 })
 element1.addEventListener('input', ()=>{
     console.log("name is blurred");
-    let regex = /^[a-zA-Z\s]{2,100}$/;
+    let regex = /^[\w'.][^0-9_!¡?÷?¿/\\+=@#$%ˆ&*()\^{}|~<>;:[\]]{1,}$/;
     let str = element1.value;
     console.log(regex, str);
     if(str.length==0){
@@ -77,7 +77,7 @@ element4.addEventListener('onclick', ()=>{
 })
 element4.addEventListener('input', ()=>{
     console.log("name is blurred");
-    let regex = /^(\+91[\-\s]?)?(0-9[\-\s]?)?[0]?(91)?(6|7|8|9)\d{9}/;
+    let regex = /^(((\+){1}91){1})? ?-?[98765]{1}[0-9]{9}[^A-Za-z]$/;
     let str = element4.value;
     console.log(regex, str);
     if(str.length==0){
