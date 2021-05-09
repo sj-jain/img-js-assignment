@@ -43,7 +43,7 @@ document.cookie = name + "=" + escape (value) +
 ((domain == null) ? "" : ("; domain=" + domain)) +
 ((secure == true) ? "; secure" : "");
 }
-function DisplayInfo() {
+function DisplayInfo(t) {
 var expdate = new Date();
 var visit;
 expdate.setTime(expdate.getTime() +  (24 * 60 * 60 * 1000 * 365)); 
@@ -55,21 +55,21 @@ var message;
 if(visit == 1) 
 message="         you never visited before";
 if(visit== 2) 
-message="          your last visit was on "+t+" !";
+message="          your last visit was on "+t+"!";
 if(visit == 3) 
-message="            your last visit was on "+t+"     ";
+message="            your last visit was on   "+t+"   ";
 if(visit == 4)
-message="           your last visit was on "+t+"   "; 
+message="           your last visit was on  "+t+" "; 
 if(visit == 5) 
 message="       your last visit was on "+t+" ";
 if(visit == 6) 
-message="          your last visit was on "+t+"      ";
+message="          your last visit was on   "+t+"    ";
 if(visit == 7)
 message="             your last visit was on "+t+" "; 
 if(visit == 8) 
-message="            your last visit was on "+t+"  ";
+message="            your last visit was on  "+t+" ";
 if(visit == 9)
-message="             your last visit was on "+t+"           "; 
+message="             your last visit was on  "+t+"          "; 
 if(visit >= 10) 
 message=" ";
   alert("\n"+"Your browser has visited this page               \n"
