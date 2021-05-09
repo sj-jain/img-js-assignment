@@ -52,14 +52,20 @@ if(!(visit = GetCookie("visit")))
 visit = 0;
 visit++;
 SetCookie("visit", visit, expdate, "/", null, false);
-SetCookie("time" , expdate , 365);
+
 var message;
-if(visit == 1) 
-message="         you never visited before";
-if(visit== 2) 
-message="          your last visit was on "+ t;
-if(visit == 3) 
-message="            your last visit was on "+ t ;
+if(visit == 1){ 
+let date1 = new Date();
+SetCookie("time" , date1 , 365);
+message="         you never visited before";}
+if(visit== 2) {
+let date2 = new Date();
+SetCookie("time" , date2 , 365);
+message="          your last visit was on "+ t;}
+if(visit == 3) {
+let date3 = new Date();
+SetCookie("time" , date3 , 365);
+message="            your last visit was on "+ t ;}
 if(visit == 4)
 message="           your last visit was on "+ t ; 
 if(visit == 5) 
