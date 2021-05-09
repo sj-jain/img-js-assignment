@@ -66,19 +66,32 @@ if(visit == 3) {
 let date3 = new Date();
 SetCookie("time" , date3 );
 message="            your last visit was on "+ t ;}
-if(visit == 4)
-message="           your last visit was on "+ t ; 
-if(visit == 5) 
-message="       your last visit was on "+ t;
-if(visit == 6) 
-message="          your last visit was on "+ t  ;
-if(visit == 7)
-message="             your last visit was on "+ t; 
-if(visit == 8) 
-message="            your last visit was on"+ t ;
-if(visit == 9)
-message="             your last visit was on  "+ t; 
+if(visit == 4){
+let date4 = new Date();
+SetCookie("time" , date4 );
+message="           your last visit was on "+ t ; }
+if(visit == 5) {
+let date5 = new Date();
+SetCookie("time" , date5 );
+message="       your last visit was on "+ t;}
+if(visit == 6) {
+let date6 = new Date();
+SetCookie("time" , date6 );
+message="          your last visit was on "+ t  ;}
+if(visit == 7){
+let date7 = new Date();
+SetCookie("time" , date7 );
+message="             your last visit was on "+ t; }
+if(visit == 8) {
+let date8 = new Date();
+SetCookie("time" , date8 );
+message="            your last visit was on"+ t ;}
+if(visit == 9){
+let date9 = new Date();
+SetCookie("time" , date9 );
+message="             your last visit was on  "+ t; }
 if(visit >= 10) 
+
 message=" ";
   alert("\n"+"Your browser has visited this page               \n"
             +"                              "+visit+"\n"
