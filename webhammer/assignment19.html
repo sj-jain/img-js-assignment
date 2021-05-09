@@ -45,7 +45,7 @@ document.cookie = name + "=" + escape (value) +
 }
 function DisplayInfo() {
 var expdate = new Date();
-var t = getcookie("time");
+var t = GetCookie("time");
 var visit;
 expdate.setTime(expdate.getTime() +  (24 * 60 * 60 * 1000 * 365)); 
 if(!(visit = GetCookie("visit"))) 
@@ -56,15 +56,15 @@ SetCookie("visit", visit, expdate, "/", null, false);
 var message;
 if(visit == 1){ 
 let date1 = new Date();
-SetCookie("time" , date1 , 365);
+SetCookie("time" , date1 );
 message="         you never visited before";}
 if(visit== 2) {
 let date2 = new Date();
-SetCookie("time" , date2 , 365);
+SetCookie("time" , date2 );
 message="          your last visit was on "+ t;}
 if(visit == 3) {
 let date3 = new Date();
-SetCookie("time" , date3 , 365);
+SetCookie("time" , date3 );
 message="            your last visit was on "+ t ;}
 if(visit == 4)
 message="           your last visit was on "+ t ; 
